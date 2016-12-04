@@ -31,7 +31,8 @@ OptionParser.new do |opts|
 end.parse!
 
 if expression.nil?
-  print("No expression given")
+  puts("No expression given")
+  exit
 end
 
 rex = Regexp.new(expression)
